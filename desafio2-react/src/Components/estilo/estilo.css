@@ -1,0 +1,55 @@
+.carrito{
+    position: absolute;
+    right: 70px;
+    height: 50px;
+}
+
+.titulo{
+    display: flex;
+   justify-content: center;
+    
+
+}
+
+.tituloPrenda{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.numeroPrenda{
+    display: flex;
+    justify-content: center;
+}
+
+.botonSuma{
+    position: relative;
+    left: 55%;
+    width: 50px;
+    background-color: rgb(255, 215, 215);;
+}
+
+.botonResta{
+    position: relative;
+    left: 40%;
+    width: 50px;
+    background-color: rgb(255, 215, 215);;
+}
+
+.agregarCarrito{
+    position: relative;
+    left: 45%;
+    
+}
+
+.divCars{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.botonCarrito{
+    background-color: rgb(255, 215, 215);
+    
+}
