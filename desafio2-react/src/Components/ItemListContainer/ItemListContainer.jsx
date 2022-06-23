@@ -1,17 +1,19 @@
 //IMPORT DE LOS ESTILOS
 import '../estilo/estilo.css'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { getFetch } from '../../helpers/getFetch'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
+import { CartContext } from '../CarritoContext/CarritoContext'
+
 
 export default function ItemListContainer({saludo}){
     const [productos, setProductos]= useState([])
-    
-
     const {categoriaId}= useParams()
-
     console.log(categoriaId)
+    
+    
+    
     
     useEffect(()=>{
         if (categoriaId) {

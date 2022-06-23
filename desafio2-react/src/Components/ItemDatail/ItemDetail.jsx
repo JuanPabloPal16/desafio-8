@@ -1,17 +1,18 @@
 import ItemCount from "../VistaContador/VistaContador"
-import { useState } from "react"
+import { useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import '../estilo/estilo.css'
+import { CartContext } from "../CarritoContext/CarritoContext"
+
 
 
 const ItemDetail = ({producto}) =>{
    const [estado, setEstado] = useState(null)
    
-   
-    const onAdd = (cant) => {
-        console.log(cant)
-        setEstado(cant)
+   const { AddToCard } = useContext (CartContext);
 
+    const onAdd = (cant) => {
+        AddToCard (producto,cant)
     }
 
 

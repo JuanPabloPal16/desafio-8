@@ -13,7 +13,7 @@ export default function Cuerpo(){
     return (
         <>
         <Navbar bg="dark" variant="dark">
-          <img className="carrito" src={cart}/>
+          <NavLink to="/cart"><img className="carrito" src={cart}/></NavLink>
           <Container>
           <Navbar.Brand href="/">LASLOCAS.IND</Navbar.Brand>
           <Nav className="me-auto">

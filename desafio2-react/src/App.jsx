@@ -15,21 +15,24 @@ import  ItemCount from './Components/VistaContador/VistaContador.jsx';
 import Cart from './Components/Cart/Cart';
 //import { Form } from 'react-bootstrap';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
-
+import CartContextProvider from './Components/CarritoContext/CarritoContext';
 
 
 function App() {
   
   return (
-    <BrowserRouter>
-        <Cuerpo/>
-        <Routes>
-          <Route path = "/" element = {<ItemListContainer saludo='Bienvenido a la pagina wed' />}/>
-          <Route path = "/categoria/:categoriaId" element = {<ItemListContainer saludo='Bienvenido a la pagina wed' />}/>
-          <Route path = "/detalle/:id" element = {<ItemDetailContainer/>}/>
-          <Route path = "/cart" element = {<Cart/>}/>   
-        </Routes>
-    </BrowserRouter>
+  <CartContextProvider>
+      <BrowserRouter>
+          <Cuerpo/>
+          <Routes>
+            <Route path = "/" element = {<ItemListContainer saludo='Bienvenido a la pagina wed' />}/>
+            <Route path = "/categoria/:categoriaId" element = {<ItemListContainer saludo='Bienvenido a la pagina wed' />}/>
+            <Route path = "/detalle/:id" element = {<ItemDetailContainer/>}/>
+            <Route path = "/cart" element = {<Cart/>}/>   
+          </Routes>
+      </BrowserRouter>
+  </CartContextProvider>
+    
 
   );
 }
