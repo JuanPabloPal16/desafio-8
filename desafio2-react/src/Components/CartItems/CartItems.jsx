@@ -1,3 +1,4 @@
+//ITEMS DEL CARRITO
 import {useContext} from 'react'
 import { CartContext } from '../CarritoContext/CarritoContext'
 const CartItems = ({item}) => {
