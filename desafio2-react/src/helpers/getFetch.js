@@ -10,6 +10,7 @@ let productos = [{
     categoria:'Short 2',
     Descripcion:'Short azul',
     Precio:'$2500',
+    Foto:'',
 
 },
 {
