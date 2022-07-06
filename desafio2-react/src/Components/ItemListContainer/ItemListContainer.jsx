@@ -31,13 +31,13 @@ export default function ItemListContainer({saludo}){
         .finally(() => setLoading(false))
     },[])
     
-      console.log(productos)
+    console.log(productos)
     
    
    
    
    
-      /* useEffect(()=>{
+    /* useEffect(()=>{
         if (categoriaId) {
             
             getFetch()

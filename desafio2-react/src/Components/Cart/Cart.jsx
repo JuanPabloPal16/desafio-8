@@ -11,7 +11,7 @@ const Cart = () => {
   return (
     <>
     <div>
-      {cartList.length<1?(
+      {cartList<1?(
       <h1>EL CARRITO ESTA VACIO</h1>)
       :
       (

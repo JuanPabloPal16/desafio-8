@@ -7,16 +7,13 @@ const CartContextProvider = ({children}) => {
 
   const [carList, setCarList] = useState([]);
 
-  const AddToCard = (producto, cant) =>{
-    if (IsInCart(producto.id)) {
-      alert("ESTE PRODUCTO ESTA YA FUE AGRGADO AL CARRITO")
-    }
-    else{
-      setCarList([...carList, {producto,cant}])
-      alert("SE AGREGO AL CARRITO")
-    }
+  const AddToCard = (producto) => {
+    setCarList([
+        ...carList,
+        producto
+    ])
+}
 
-  }
 
 
   const DelItem = () => {
